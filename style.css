@@ -820,8 +820,40 @@ footer {
     overflow-x: auto;
   }
   .parent img {
-    width: unset;
+    width: 100%;
   }
+  @keyframes blink-border {
+    0%   { box-shadow: 0 0px 0.5px 0.5x gray; }
+    50%  { box-shadow: 0 0px 1px 1px gray; }
+    100% { box-shadow: 0 0px 0.5px 0.5px gray; }
+  }
+  .blinking:checked {
+    animation: none;             
+    box-shadow: none;          
+    border: 0px !important;
+    background-color: blue !important;
+  }
+
+
+
+  /* 1 to 55 and 61,62 start */
+  .blinking   {
+    width: 3.5px !important;
+    height: 3.5px !important;
+    border: 1px solid black;
+  }
+  /* 1 to 55 and 61,62 end */
+
+
+
+  /* 56 to 60 and 63 to 79 start */
+  .blinking56, .blinking57, .blinking58, .blinking59, .blinking60,.blinking63, .blinking64, .blinking65, .blinking66, .blinking67, .blinking68, .blinking69, .blinking70, .blinking71, .blinking72, .blinking73, .blinking74, .blinking75, .blinking76, .blinking77, .blinking78, .blinking79 
+  {
+    width: 2.5px !important;
+    height: 2.5px !important;
+    border: 1px solid black !important;
+  }
+  /* 56 to 60 and 63 to 79 end */
 
 
 
